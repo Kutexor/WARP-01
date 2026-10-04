@@ -1,0 +1,14 @@
+C:\Users\s37357\HelloWorkshop\bin\Debug\net10.0\HelloWorkshop.exe
+C:\Users\s37357\HelloWorkshop\bin\Debug\net10.0\HelloWorkshop.deps.json
+C:\Users\s37357\HelloWorkshop\bin\Debug\net10.0\HelloWorkshop.runtimeconfig.json
+C:\Users\s37357\HelloWorkshop\bin\Debug\net10.0\HelloWorkshop.dll
+C:\Users\s37357\HelloWorkshop\bin\Debug\net10.0\HelloWorkshop.pdb
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\HelloWorkshop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\HelloWorkshop.AssemblyInfoInputs.cache
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\HelloWorkshop.AssemblyInfo.cs
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\HelloWorkshop.csproj.CoreCompileInputs.cache
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\HelloWorkshop.dll
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\refint\HelloWorkshop.dll
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\HelloWorkshop.pdb
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\HelloWorkshop.genruntimeconfig.cache
+C:\Users\s37357\HelloWorkshop\obj\Debug\net10.0\ref\HelloWorkshop.dll
