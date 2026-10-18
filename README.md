@@ -7,3 +7,8 @@ się
 dzieje
 ekspersso
 yo
+
+## kontakt
+Autor: Filip Kulkowski  
+yo
+elo elo
