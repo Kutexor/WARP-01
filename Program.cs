@@ -172,32 +172,157 @@
 // Console.WriteLine($"Racji dziennie na całą drużynę: {racjeDziennieDruzyna:F2}");
 // Console.WriteLine($"Średnio racji dziennie na jedną osobę: {racjeDziennieOsoba:F2}");
 
-Console.Write("Podaj punkty życia: ");
+// Console.Write("Podaj punkty życia: ");
+// string hpS = Console.ReadLine()!;
+// int hp = int.Parse(hpS);
+
+// Console.Write("Podaj liczbę mikstur: ");
+// string mixS = Console.ReadLine()!;
+// int mikstury = int.Parse(mixS);
+
+// Console.Write("Czy ma klucz (true/false): ");
+// string kluczS = Console.ReadLine()!;
+// bool maKlucz = bool.Parse(kluczS);
+
+// Console.Write("Czy ma mapę (true/false): ");
+// string mapaS = Console.ReadLine()!;
+// bool maMape = bool.Parse(mapaS);
+
+// bool zyje = hp > 0;
+// bool maPelneZdrowie = hp == 100;
+// bool wymagaLeczenia = !maPelneZdrowie;
+// bool maZaopatrzenie = mikstury >= 1;
+// bool maPrzedmiotNawigacyjny = maKlucz || maMape;
+// bool gotowyDoWyprawy = zyje && maZaopatrzenie && maPrzedmiotNawigacyjny;
+
+// Console.WriteLine($"Żyje: {zyje}");
+// Console.WriteLine($"Ma pełne zdrowie: {maPelneZdrowie}");
+// Console.WriteLine($"Wymaga leczenia: {wymagaLeczenia}");
+// Console.WriteLine($"Ma zaopatrzenie: {maZaopatrzenie}");
+// Console.WriteLine($"Ma klucz lub mapę: {maPrzedmiotNawigacyjny}");
+// Console.WriteLine($"Gotowy do wyprawy: {gotowyDoWyprawy}");
+
+// Console.Write("Podaj imie: ");
+// string imie = Console.ReadLine()!;
+
+// Console.Write("Podaj maksymalne punkty życia: ");
+// string MaxhpS = Console.ReadLine()!;
+// int maxhp = int.Parse(MaxhpS);
+
+// Console.Write("Podaj aktualne punkty życia: ");
+// string hpS = Console.ReadLine()!;
+// int hp = int.Parse(hpS);
+
+// Console.Write("Podaj podstawowe obrażenia ");
+// string dmgS = Console.ReadLine()!;
+// int dmg = int.Parse(dmgS);
+
+// Console.Write("Podaj premie obrażeń ");
+// string premiaS = Console.ReadLine()!;
+// int premia = int.Parse(premiaS);
+
+// Console.Write("Podaj mnożnik specjalnego ");
+// string mnoznikS = Console.ReadLine()!;
+// int mnoznik = int.Parse(mnoznikS);
+
+// Console.Write("Podaj ilosc ataków podstawowych ");
+// string atakS = Console.ReadLine()!;
+// int atak = int.Parse(atakS);
+
+// dmg += premia;
+// mnoznik *= dmg;
+// int kombo = (dmg * atak) + mnoznik;
+// double hprn = ((double)hp / maxhp) * 100;
+// bool zyje = hp > 0;
+// bool fullhp = hp == maxhp;
+// Console.WriteLine("========== RAPORT Z WALKI ==========");
+// Console.WriteLine($"Imie {imie}");
+// Console.WriteLine($"Hp: {hp}/{maxhp} ({hprn:F2}%)");
+// Console.WriteLine($"Obrażenia {dmg}");
+// Console.WriteLine($"Obrażenia ult {mnoznik}");
+// Console.WriteLine($"Kombo: {kombo}");
+// Console.WriteLine($"żyje: {zyje}");
+// Console.WriteLine($"Pełne hp: {fullhp}");
+
+
+using System.Reflection.Emit;
+
+Console.Write("Podaj imie: ");
+string imie = Console.ReadLine()!;
+
+const int maxhp = 100;
+
+Console.Write("Podaj aktualne punkty życia: ");
 string hpS = Console.ReadLine()!;
 int hp = int.Parse(hpS);
 
-Console.Write("Podaj liczbę mikstur: ");
-string mixS = Console.ReadLine()!;
-int mikstury = int.Parse(mixS);
+Console.Write("Podaj podstawowe obrażenia ");
+string dmgS = Console.ReadLine()!;
+int dmg = int.Parse(dmgS);
 
-Console.Write("Czy ma klucz (true/false): ");
-string kluczS = Console.ReadLine()!;
-bool maKlucz = bool.Parse(kluczS);
+Console.Write("Podaj premie obrażeń ");
+string premiaS = Console.ReadLine()!;
+int premia = int.Parse(premiaS);
+
+Console.Write("Podaj mnożnik specjalnego ");
+string mnoznikS = Console.ReadLine()!;
+int mnoznik = int.Parse(mnoznikS);
+
+Console.Write("Podaj ilosc ataków podstawowych ");
+string atakS = Console.ReadLine()!;
+int atak = int.Parse(atakS);
+
+const int plecak = 10;
+
+Console.Write("Podaj ilosc przedmiotów ");
+string przedmiotyS = Console.ReadLine()!;
+int przedmioty = int.Parse(przedmiotyS);
+
+Console.Write("Podaj ilosc złota ");
+string zlotoS = Console.ReadLine()!;
+int zloto = int.Parse(zlotoS);
+
+Console.Write("Podaj ilosc członków ");
+string czlonkowieS = Console.ReadLine()!;
+int czlonkowie = int.Parse(czlonkowieS);
 
 Console.Write("Czy ma mapę (true/false): ");
 string mapaS = Console.ReadLine()!;
-bool maMape = bool.Parse(mapaS);
+bool mapa = bool.Parse(mapaS);
 
+int zadane = dmg + premia;
+int ult = mnoznik * zadane;
+// int kombo = (dmg * atak) + ult;
+double hprn = ((double)hp / maxhp) * 100;
 bool zyje = hp > 0;
-bool maPelneZdrowie = hp == 100;
-bool wymagaLeczenia = !maPelneZdrowie;
-bool maZaopatrzenie = mikstury >= 1;
-bool maPrzedmiotNawigacyjny = maKlucz || maMape;
-bool gotowyDoWyprawy = zyje && maZaopatrzenie && maPrzedmiotNawigacyjny;
+bool fullhp = hp == maxhp;
+int wolne = plecak - przedmioty;
+int naosobe = zloto / czlonkowie;
+double skarbiec = (double)zloto % czlonkowie;
+bool leczenie = !fullhp;
+bool miejscep = przedmioty < plecak;
 
-Console.WriteLine($"Żyje: {zyje}");
-Console.WriteLine($"Ma pełne zdrowie: {maPelneZdrowie}");
-Console.WriteLine($"Wymaga leczenia: {wymagaLeczenia}");
-Console.WriteLine($"Ma zaopatrzenie: {maZaopatrzenie}");
-Console.WriteLine($"Ma klucz lub mapę: {maPrzedmiotNawigacyjny}");
-Console.WriteLine($"Gotowy do wyprawy: {gotowyDoWyprawy}");
+Console.WriteLine("========== Karta Bohatera ==========");
+Console.WriteLine($"Imie {imie}");
+Console.WriteLine("------------------------------------");
+Console.WriteLine($"Hp: {hp}/{maxhp} ({hprn:F2}%)");
+Console.WriteLine($"Siła {dmg}");
+Console.WriteLine($"Premia: {premia}");
+Console.WriteLine($"Obrażenia {zadane}");
+Console.WriteLine($"Mnożnik ult: {mnoznik}");
+Console.WriteLine($"Obrażenia ult {ult}");
+Console.WriteLine("------------------------------------");
+Console.WriteLine($"Plecak {przedmioty}/{plecak}");
+Console.WriteLine($"wolne miejsce {wolne}");
+Console.WriteLine($"Złoto {zloto}");
+Console.WriteLine($"Liczba członków {czlonkowie}");
+Console.WriteLine($"Złoto na osobe {naosobe}");
+Console.WriteLine($"W skrabcu zostanie {skarbiec}");
+Console.WriteLine("------------------------------------");
+Console.WriteLine($"Ma mape: {mapa}");
+Console.WriteLine($"żyje: {zyje}");
+Console.WriteLine($"Pełne hp: {fullhp}");
+Console.WriteLine($"Wymaga leczenia: {leczenie}");
+Console.WriteLine($"Ma miejsce w placaku: {miejscep}");
+
+// Lab3 lab3 Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3
