@@ -325,4 +325,5 @@ Console.WriteLine($"Pełne hp: {fullhp}");
 Console.WriteLine($"Wymaga leczenia: {leczenie}");
 Console.WriteLine($"Ma miejsce w placaku: {miejscep}");
 
-// Lab3 lab3 Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3
+// Lab3 lab3 Lab3 lab3 Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3
+
