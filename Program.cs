@@ -80,14 +80,14 @@
 
 // Console.WriteLine($"{n} sekund to {(n / 60)}min i {n % 60} sekund");
 
-Console.Write("Podaj ilosć monet: ");
-string no = Console.ReadLine()!;
-int n = int.Parse(no);
-Console.Write("Podaj ilosć ludzi: ");
-string na = Console.ReadLine()!;
-int i = int.Parse(na);
+// Console.Write("Podaj ilosć monet: ");
+// string no = Console.ReadLine()!;
+// int n = int.Parse(no);
+// Console.Write("Podaj ilosć ludzi: ");
+// string na = Console.ReadLine()!;
+// int i = int.Parse(na);
 
-Console.WriteLine($"{n} monet, {i} ludzi, to {(n / i)} monet na osoobe i na dzieci z domu dziecka zostanie 0.{n % i}  ");
+// Console.WriteLine($"{n} monet, {i} ludzi, to {(n / i)} monet na osoobe i na dzieci z domu dziecka zostanie 0.{n % i}  ");
 
 
 
@@ -100,3 +100,74 @@ Console.WriteLine($"{n} monet, {i} ludzi, to {(n / i)} monet na osoobe i na dzie
 // int i = int.Parse(na);
 
 // Console.WriteLine($"zwykły atak zada {n*i} ult zada {(n*i) * 2} a combo zada {((n*i) * 3) + ((n*i) * 2)} ");
+
+// Console.Write("Podaj HP: ");
+// string hps = Console.ReadLine()!;
+// int hp = int.Parse(hps);
+
+// if (hp <= 0)
+// {
+//     Console.WriteLine("Nie żyje.");
+// }
+// else{
+// Console.Write("Czy ma klucz (true/false): ");
+// string kluczs = Console.ReadLine()!;
+// bool klucz = bool.Parse(kluczs);
+
+// Console.Write("Czy zna hasło (true/false): ");
+// string haslos = Console.ReadLine()!;
+// bool haslo = bool.Parse(haslos);
+
+//     if(klucz || haslo)
+//     {
+//         Console.WriteLine("Można wejśc");
+//     }
+//     else
+//     {
+//         Console.WriteLine("nie ma możliwości wejścia");
+//     }
+// }
+
+int zdrowieBohatera = 60;
+int zdrowiePrzeciwnika = 45;
+int liczbaMikstur = 2;
+int numerTury = 1;
+
+while(zdrowieBohatera > 0 && zdrowiePrzeciwnika > 0)
+{
+    Console.WriteLine($"Tura nr: {numerTury}");
+    Console.WriteLine($"Bohater - {zdrowieBohatera}  Wróg - {zdrowiePrzeciwnika}");
+    numerTury++;
+    Console.Write("Wybierz wpisujac: Atak-1 leczenie-2 ucieczka-3");
+    string turas = Console.ReadLine()!;
+    int tura = int.Parse(turas);
+    switch (tura)
+{
+    case 1:
+        Console.WriteLine("Zadano obrazenia");
+        zdrowiePrzeciwnika -= 12;
+        break;
+        case 2:
+        if(liczbaMikstur > 0)
+            {
+                zdrowieBohatera += 15;
+                Console.WriteLine("Użyto mikstury");
+                liczbaMikstur -= 1;
+                
+            }
+            else
+            {
+                Console.WriteLine("Brak mikstur");
+            }
+            break;
+        case 3:
+
+        
+    default:
+        Console.WriteLine("nie śpij");
+        break;
+}
+Console.WriteLine("Przeciwnik oddał atak");
+zdrowieBohatera -= 6;
+}
+Console.WriteLine("koniec walki");
