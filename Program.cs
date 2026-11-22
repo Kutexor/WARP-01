@@ -133,7 +133,7 @@ int zdrowiePrzeciwnika = 45;
 int liczbaMikstur = 2;
 int numerTury = 1;
 
-while(zdrowieBohatera > 0 && zdrowiePrzeciwnika > 0)
+while (zdrowieBohatera > 0 && zdrowiePrzeciwnika > 0)
 {
     Console.WriteLine($"Tura nr: {numerTury}");
     Console.WriteLine($"Bohater - {zdrowieBohatera}  Wróg - {zdrowiePrzeciwnika}");
@@ -142,18 +142,18 @@ while(zdrowieBohatera > 0 && zdrowiePrzeciwnika > 0)
     string turas = Console.ReadLine()!;
     int tura = int.Parse(turas);
     switch (tura)
-{
-    case 1:
-        Console.WriteLine("Zadano obrazenia");
-        zdrowiePrzeciwnika -= 12;
-        break;
+    {
+        case 1:
+            Console.WriteLine("Zadano obrazenia");
+            zdrowiePrzeciwnika -= 12;
+            break;
         case 2:
-        if(liczbaMikstur > 0)
+            if (liczbaMikstur > 0)
             {
                 zdrowieBohatera += 15;
                 Console.WriteLine("Użyto mikstury");
                 liczbaMikstur -= 1;
-                
+
             }
             else
             {
@@ -162,12 +162,14 @@ while(zdrowieBohatera > 0 && zdrowiePrzeciwnika > 0)
             break;
         case 3:
 
-        
-    default:
-        Console.WriteLine("nie śpij");
-        break;
-}
-Console.WriteLine("Przeciwnik oddał atak");
-zdrowieBohatera -= 6;
+
+
+
+        default:
+            Console.WriteLine("nie śpij");
+            break;
+    }
+    Console.WriteLine("Przeciwnik oddał atak");
+    zdrowieBohatera -= 7;
 }
 Console.WriteLine("koniec walki");
