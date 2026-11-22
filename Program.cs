@@ -336,9 +336,9 @@ int premia = 10;
 int mnoznik = 3;
 int atak = 4;
 
-const int plecak = 10;
-int przedmioty = 6;
-int zloto = 250;
+const int plecak = 100000000000;
+int przedmioty = 6767;
+int zloto = 20000000;
 int czlonkowie = 4;
 bool mapa = true;
 
