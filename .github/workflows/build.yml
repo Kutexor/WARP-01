@@ -5,7 +5,7 @@ on:
 
 env:
   DOTNET_VERSION: 10.0.x
-  PROJECT_PATH: Z:/projekt1/Proj1.csproj
+  PROJECT_PATH: ./projekt1/Proj1.csproj
 
 jobs:
   build:
