@@ -11,3 +11,6 @@ jobs:
       - name: Confirm runner
         shell: bash
         run: echo "Runner is ready"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
