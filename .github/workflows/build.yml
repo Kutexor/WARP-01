@@ -26,4 +26,7 @@ jobs:
       - name: Restore dependencies
         shell: bash
         run: dotnet restore "$PROJECT_PATH"
+      - name: Build project
+        shell: bash
+        run: dotnet build "$PROJECT_PATH" --configuration Release --no-restore
       
