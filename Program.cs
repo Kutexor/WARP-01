@@ -245,50 +245,102 @@
 // Console.WriteLine($"Pełne hp: {fullhp}");
 
 
-using System.Reflection.Emit;
+// using System.Reflection.Emit;
 
-Console.Write("Podaj imie: ");
-string imie = Console.ReadLine()!;
+// Console.Write("Podaj imie: ");
+// string imie = Console.ReadLine()!;
+
+// const int maxhp = 100;
+
+// Console.Write("Podaj aktualne punkty życia: ");
+// string hpS = Console.ReadLine()!;
+// int hp = int.Parse(hpS);
+
+// Console.Write("Podaj podstawowe obrażenia ");
+// string dmgS = Console.ReadLine()!;
+// int dmg = int.Parse(dmgS);
+
+// Console.Write("Podaj premie obrażeń ");
+// string premiaS = Console.ReadLine()!;
+// int premia = int.Parse(premiaS);
+
+// Console.Write("Podaj mnożnik specjalnego ");
+// string mnoznikS = Console.ReadLine()!;
+// int mnoznik = int.Parse(mnoznikS);
+
+// Console.Write("Podaj ilosc ataków podstawowych ");
+// string atakS = Console.ReadLine()!;
+// int atak = int.Parse(atakS);
+
+// const int plecak = 10;
+
+// Console.Write("Podaj ilosc przedmiotów ");
+// string przedmiotyS = Console.ReadLine()!;
+// int przedmioty = int.Parse(przedmiotyS);
+
+// Console.Write("Podaj ilosc złota ");
+// string zlotoS = Console.ReadLine()!;
+// int zloto = int.Parse(zlotoS);
+
+// Console.Write("Podaj ilosc członków ");
+// string czlonkowieS = Console.ReadLine()!;
+// int czlonkowie = int.Parse(czlonkowieS);
+
+// Console.Write("Czy ma mapę (true/false): ");
+// string mapaS = Console.ReadLine()!;
+// bool mapa = bool.Parse(mapaS);
+
+// int zadane = dmg + premia;
+// int ult = mnoznik * zadane;
+// // int kombo = (dmg * atak) + ult;
+// double hprn = ((double)hp / maxhp) * 100;
+// bool zyje = hp > 0;
+// bool fullhp = hp == maxhp;
+// int wolne = plecak - przedmioty;
+// int naosobe = zloto / czlonkowie;
+// double skarbiec = (double)zloto % czlonkowie;
+// bool leczenie = !fullhp;
+// bool miejscep = przedmioty < plecak;
+
+// Console.WriteLine("========== Karta Bohatera ==========");
+// Console.WriteLine($"Imie {imie}");
+// Console.WriteLine("------------------------------------");
+// Console.WriteLine($"Hp: {hp}/{maxhp} ({hprn:F2}%)");
+// Console.WriteLine($"Siła {dmg}");
+// Console.WriteLine($"Premia: {premia}");
+// Console.WriteLine($"Obrażenia {zadane}");
+// Console.WriteLine($"Mnożnik ult: {mnoznik}");
+// Console.WriteLine($"Obrażenia ult {ult}");
+// Console.WriteLine("------------------------------------");
+// Console.WriteLine($"Plecak {przedmioty}/{plecak}");
+// Console.WriteLine($"wolne miejsce {wolne}");
+// Console.WriteLine($"Złoto {zloto}");
+// Console.WriteLine($"Liczba członków {czlonkowie}");
+// Console.WriteLine($"Złoto na osobe {naosobe}");
+// Console.WriteLine($"W skrabcu zostanie {skarbiec}");
+// Console.WriteLine("------------------------------------");
+// Console.WriteLine($"Ma mape: {mapa}");
+// Console.WriteLine($"żyje: {zyje}");
+// Console.WriteLine($"Pełne hp: {fullhp}");
+// Console.WriteLine($"Wymaga leczenia: {leczenie}");
+// Console.WriteLine($"Ma miejsce w placaku: {miejscep}");
+
+// Lab3 lab3 Lab3 lab3 Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3
+
+string imie = "Geralt";
 
 const int maxhp = 100;
-
-Console.Write("Podaj aktualne punkty życia: ");
-string hpS = Console.ReadLine()!;
-int hp = int.Parse(hpS);
-
-Console.Write("Podaj podstawowe obrażenia ");
-string dmgS = Console.ReadLine()!;
-int dmg = int.Parse(dmgS);
-
-Console.Write("Podaj premie obrażeń ");
-string premiaS = Console.ReadLine()!;
-int premia = int.Parse(premiaS);
-
-Console.Write("Podaj mnożnik specjalnego ");
-string mnoznikS = Console.ReadLine()!;
-int mnoznik = int.Parse(mnoznikS);
-
-Console.Write("Podaj ilosc ataków podstawowych ");
-string atakS = Console.ReadLine()!;
-int atak = int.Parse(atakS);
+int hp = 85;
+int dmg = 25;
+int premia = 10;
+int mnoznik = 3;
+int atak = 4;
 
 const int plecak = 10;
-
-Console.Write("Podaj ilosc przedmiotów ");
-string przedmiotyS = Console.ReadLine()!;
-int przedmioty = int.Parse(przedmiotyS);
-
-Console.Write("Podaj ilosc złota ");
-string zlotoS = Console.ReadLine()!;
-int zloto = int.Parse(zlotoS);
-
-Console.Write("Podaj ilosc członków ");
-string czlonkowieS = Console.ReadLine()!;
-int czlonkowie = int.Parse(czlonkowieS);
-
-Console.Write("Czy ma mapę (true/false): ");
-string mapaS = Console.ReadLine()!;
-bool mapa = bool.Parse(mapaS);
+int przedmioty = 6;
+int zloto = 250;
+int czlonkowie = 4;
+bool mapa = true;
 
 int zadane = dmg + premia;
 int ult = mnoznik * zadane;
@@ -324,6 +376,3 @@ Console.WriteLine($"żyje: {zyje}");
 Console.WriteLine($"Pełne hp: {fullhp}");
 Console.WriteLine($"Wymaga leczenia: {leczenie}");
 Console.WriteLine($"Ma miejsce w placaku: {miejscep}");
-
-// Lab3 lab3 Lab3 lab3 Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3Lab3 lab3
-
